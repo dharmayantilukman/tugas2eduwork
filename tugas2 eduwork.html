@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Dodi</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #337ab7;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #hero {
+            background-color: #e9ecef;
+            padding: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+        }
+
+        .hero-left {
+            flex: 1;
+            text-align: left;
+        }
+
+        .hero-right {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-right img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #337ab7;
+            color: white;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+
+        #about {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .sub-heading {
+            color: #777;
+            margin-bottom: 1em;
+        }
+
+        .about-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            margin-top: 1em;
+            text-align: left;
+        }
+
+        .detail-item {
+            background-color: white;
+            padding: 1em;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.3em;
+            color: blue; /* Warna biru untuk label */
+        }
+
+        #portfolio {
+            padding: 2em;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5em;
+            margin-top: 1.5em;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .image-container {
+            overflow: hidden;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover .image-container img {
+            transform: scale(1.05);
+        }
+
+        .project-card h3, .project-card p {
+            padding: 1em;
+            text-align: left;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">Brand</div>
+        <nav>
+            <ul>
+                <li><a href="#">Header</a></li>
+                <li><a href="#">Biodata</a></li>
+                <li><a href="#">Portofolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-left">
+            <h1>Selamat Datang di Website Saya</h1>
+            <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+            <a href="#" class="button">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="hero-right">
+            <img src="images/pierce_brosnan.jpg" alt="Foto Profil">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 style="color: blue;">About Me</h2>
+        <p class="sub-heading">A brief introduction about myself</p>
+        <div class="about-details">
+            <div class="detail-item">
+                <span class="label">Full Name:</span>
+                <span>Dodi</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Education:</span>
+                <span>S1 Informatika</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Pekerjaan:</span>
+                <span>Programmer</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Contact:</span>
+                <span>dodi@example.com</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Hobi:</span>
+                <span>Membaca, Coding</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Alamat:</span>
+                <span>Jakarta</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 style="color: blue;">Portofolio</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="images/proyek1.jpg" alt="Proyek 1">
+                </div>
+                <h3>Proyek 1</h3>
+                <p>Deskripsi proyek 1.</p>
+            </div>
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="images/proyek2.jpg" alt="Proyek 2">
+                </div>
+                <h3>Proyek 2</h3>
+                <p>Deskripsi proyek 2.</p>
+            </div>
+            <div class="project-card">
+                <div class="image-container">
+                    <img src="images/proyek3.jpg" alt="Proyek 3">
+                </div>
+                <h3>Proyek 3</h3>
+                <p>Deskripsi proyek 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dodi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
