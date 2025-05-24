@@ -1,0 +1,5 @@
+# .gitignore untuk html ,css
+__pycache__/
+*.pyc
+.env
+venv/
